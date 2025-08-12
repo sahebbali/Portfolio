@@ -1,46 +1,97 @@
-import React, { useState, useEffect } from 'react';
-import { FaGithub, FaServer, FaExternalLinkAlt, FaCode, FaEye, FaRocket, FaStar, FaHeart } from "react-icons/fa";
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from "react";
+import {
+  FaGithub,
+  FaServer,
+  FaExternalLinkAlt,
+  FaCode,
+  FaEye,
+  FaRocket,
+  FaStar,
+  FaHeart,
+} from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const projectsData = [
   {
-    title: "MedlinePlus 🛒",
-    image: "https://i.ibb.co.com/WWRX97xB/Screenshot-2025-04-01-235028.png",
+    title: "Life Never again",
+    image:
+      "https://res.cloudinary.com/dqfnprtlc/image/upload/v1754980125/Prject%20Image/qg1j73olteqxs367hjnt.png",
     technologies: [
-      "React.js", "Tailwind CSS", "Firebase", "Node.js", "Express.js",
-      "MongoDB", "Stripe", "JWT Auth"
+      "React.js",
+      "Sass CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "custom Payment gateway",
+      "JWT Auth",
     ],
-    liveLink: "https://medicine-client.web.app/",
-    serverLink: "https://github.com/BD-Arfat/medicine-server",
-    livesiteLink: "https://github.com/BD-Arfat/medicine-client",
+    liveLink: "https://life-never-again.netlify.app/",
+    serverLink: "https://github.com/sahebbali/LifeNeverAgain-Client.git",
+    livesiteLink: "https://github.com/sahebbali/LifeNeverAgain-Server.git",
     category: "fullstack",
     featured: true,
-    status: "Production Ready"
+    status: "Production Ready",
   },
   {
-    title: "Rainbow Collection",
-    image: "https://i.ibb.co/vx6zh1D2/Screenshot-2025-06-14-233510.png",
+    title: "Self Life Care",
+    image:
+      "https://res.cloudinary.com/dqfnprtlc/image/upload/v1754980126/Prject%20Image/wfkkp115zdgduyiviszo.png",
     technologies: [
-      "React", "React Router", "Tailwind CSS", "Firebase", "JWT", "Axios", "React Query", "Stripe"
+      "React.js",
+      "Sass CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "custom Payment gateway",
+      "JWT Auth",
     ],
-    liveLink: "https://panjabi-server.web.app/",
-    serverLink: "https://github.com/BD-Arfat/panjabi-server",
-    livesiteLink: "https://github.com/BD-Arfat/panjabi-client",
+    liveLink: "https://self-life-care.netlify.app/",
+    serverLink: "https://github.com/sahebbali/self-Life-Care-Client.git",
+    livesiteLink: "https://github.com/sahebbali/self-Life-Care-Server.git",
     category: "fullstack",
     featured: true,
-    status: "Live"
+    status: "Live",
   },
   {
-    title: "LIFTGUARD SOLUTION",
-    image: "https://i.ibb.co.com/HDWQf4C1/lift-guard.png",
-    technologies: ["React.js", "Tailwind CSS", "Framer Motion"],
-    liveLink: "https://liftguardsolution01.netlify.app/",
-    livesiteLink: "https://github.com/BD-Arfat/lift-guard",
-    serverLink: null,
-    category: "react-tailwind",
-    status: "Complete"
+    title: "mithilla-11",
+    image:
+      "https://res.cloudinary.com/dqfnprtlc/image/upload/v1754980935/Prject%20Image/nj3cfluwqp3nrxeio7av.jpg",
+    technologies: [
+      "React.js",
+      "Sass CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "custom Payment gateway",
+      "JWT Auth",
+    ],
+    liveLink: "https://mithilla-11.netlify.app",
+    serverLink: "https://github.com/sahebbali/Mithilla11-Client.git",
+    livesiteLink: "https://github.com/sahebbali/Mithilla11-Server.git",
+    category: "fullstack",
+    featured: true,
+    status: "Live",
   },
-  
+  {
+    title: "Gamer Hub",
+    image:
+      "https://res.cloudinary.com/dqfnprtlc/image/upload/v1754981338/Prject%20Image/gpcleg2fk4s3qjc0u1ab.jpg",
+    technologies: [
+      "React.js",
+      "Sass CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "custom Payment gateway",
+      "JWT Auth",
+    ],
+    liveLink: "https://gamers-hubs.netlify.app",
+    serverLink: "https://github.com/sahebbali/Gamers_Hub_Client.git",
+    livesiteLink: "https://github.com/sahebbali/Gamers_Hub_Server.git",
+    category: "fullstack",
+    featured: true,
+    status: "Live",
+  },
 ];
 
 const HeaderSection = ({ name }) => (
@@ -50,22 +101,29 @@ const HeaderSection = ({ name }) => (
       <div className="absolute top-0 left-1/4 w-72 h-72 bg-gradient-to-r from-emerald-400/20 to-teal-400/20 rounded-full blur-3xl animate-pulse"></div>
       <div className="absolute top-10 right-1/4 w-56 h-56 bg-gradient-to-r from-green-400/20 to-emerald-400/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
     </div>
-    
+
     <div className="relative z-10">
       <div className="inline-block relative mb-6">
         <h1 className="text-6xl md:text-7xl lg:text-8xl font-black bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 bg-clip-text text-transparent mb-4 tracking-tight">
           {name}
         </h1>
         <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-32 h-2 bg-gradient-to-r from-emerald-500 via-teal-500 to-cyan-500 rounded-full shadow-lg"></div>
-        
+
         {/* Decorative stars */}
-        <div className="absolute -top-4 -left-4 text-emerald-400 text-2xl animate-bounce">✨</div>
-        <div className="absolute -top-6 -right-6 text-teal-400 text-xl animate-bounce delay-500">⭐</div>
+        <div className="absolute -top-4 -left-4 text-emerald-400 text-2xl animate-bounce">
+          ✨
+        </div>
+        <div className="absolute -top-6 -right-6 text-teal-400 text-xl animate-bounce delay-500">
+          ⭐
+        </div>
       </div>
-      
+
       <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed font-medium">
-        Crafting digital experiences with passion and precision. 
-        <span className="text-emerald-600 font-semibold"> Every project tells a story of growth and innovation.</span>
+        Crafting digital experiences with passion and precision.
+        <span className="text-emerald-600 font-semibold">
+          {" "}
+          Every project tells a story of growth and innovation.
+        </span>
       </p>
     </div>
   </div>
@@ -81,7 +139,7 @@ const FloatingParticles = () => (
           left: `${Math.random() * 100}%`,
           top: `${Math.random() * 100}%`,
           animationDelay: `${Math.random() * 3}s`,
-          animationDuration: `${3 + Math.random() * 4}s`
+          animationDuration: `${3 + Math.random() * 4}s`,
         }}
       />
     ))}
@@ -93,11 +151,12 @@ const EnhancedProjects = () => {
   const [hoveredProject, setHoveredProject] = useState(null);
   const [isVisible, setIsVisible] = useState(false);
 
-  const categories = ["all", ...new Set(projectsData.map(p => p.category))];
+  const categories = ["all", ...new Set(projectsData.map((p) => p.category))];
 
-  const filteredProjects = selectedCategory === "all" 
-    ? projectsData 
-    : projectsData.filter(project => project.category === selectedCategory);
+  const filteredProjects =
+    selectedCategory === "all"
+      ? projectsData
+      : projectsData.filter((project) => project.category === selectedCategory);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -119,11 +178,11 @@ const EnhancedProjects = () => {
 
   const getCategoryLabel = (category) => {
     const labels = {
-      "all": "🚀 All Projects",
-      "fullstack": "💻 Full Stack",
+      all: "🚀 All Projects",
+      fullstack: "💻 Full Stack",
       "react-tailwind": "⚛️ React & Tailwind",
       "html-css": "🎨 HTML & CSS",
-      "javascript": "✨ JavaScript"
+      javascript: "✨ JavaScript",
     };
     return labels[category] || category.toUpperCase();
   };
@@ -131,9 +190,9 @@ const EnhancedProjects = () => {
   const getStatusColor = (status) => {
     const colors = {
       "Production Ready": "bg-green-500",
-      "Live": "bg-blue-500",
-      "Complete": "bg-purple-500",
-      "Learning Project": "bg-yellow-500"
+      Live: "bg-blue-500",
+      Complete: "bg-purple-500",
+      "Learning Project": "bg-yellow-500",
     };
     return colors[status] || "bg-gray-500";
   };
@@ -141,7 +200,7 @@ const EnhancedProjects = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br  relative overflow-hidden">
       <FloatingParticles />
-      
+
       {/* Main Content */}
       <div id="projects-section" className="relative z-10 py-24 px-6">
         <div className="max-w-7xl mx-auto">
@@ -159,14 +218,16 @@ const EnhancedProjects = () => {
                     : "bg-white/80 backdrop-blur-sm text-gray-700 border-2 border-emerald-200 hover:border-emerald-400 hover:bg-emerald-50 shadow-xl hover:shadow-2xl"
                 }`}
                 style={{
-                  animationDelay: `${index * 0.1}s`
+                  animationDelay: `${index * 0.1}s`,
                 }}
               >
-                <span className="relative z-10">{getCategoryLabel(category)}</span>
+                <span className="relative z-10">
+                  {getCategoryLabel(category)}
+                </span>
                 {selectedCategory !== category && (
                   <div className="absolute inset-0 bg-gradient-to-r from-emerald-600 to-teal-600 rounded-2xl opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
                 )}
-                
+
                 {/* Decorative elements */}
                 <div className="absolute -top-2 -right-2 w-4 h-4 bg-gradient-to-r from-emerald-400 to-teal-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 animate-ping"></div>
               </button>
@@ -181,14 +242,16 @@ const EnhancedProjects = () => {
                 onMouseEnter={() => setHoveredProject(idx)}
                 onMouseLeave={() => setHoveredProject(null)}
                 className={`group relative bg-white/90 backdrop-blur-sm rounded-3xl overflow-hidden shadow-2xl transition-all duration-700 transform hover:scale-105 hover:-translate-y-4 ${
-                  hoveredProject === idx ? 'shadow-emerald-500/30' : ''
-                } ${project.featured ? 'ring-2 ring-emerald-400 ring-opacity-50' : ''}`}
+                  hoveredProject === idx ? "shadow-emerald-500/30" : ""
+                } ${
+                  project.featured
+                    ? "ring-2 ring-emerald-400 ring-opacity-50"
+                    : ""
+                }`}
                 style={{
-                  animationDelay: `${idx * 0.15}s`
+                  animationDelay: `${idx * 0.15}s`,
                 }}
               >
-               
-
                 {/* Project Image Container */}
                 <div className="relative overflow-hidden h-72 group-hover:h-64 transition-all duration-500">
                   <img
@@ -196,11 +259,11 @@ const EnhancedProjects = () => {
                     alt={project.title}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
-                  
+
                   {/* Gradient Overlays */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   <div className="absolute inset-0 bg-gradient-to-r from-emerald-600/20 to-teal-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                  
+
                   {/* Floating Action Buttons */}
                   <div className="absolute inset-0 flex items-center justify-center gap-6 opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-8 group-hover:translate-y-0">
                     {project.liveLink && (
@@ -309,7 +372,7 @@ const EnhancedProjects = () => {
 
                 {/* Bottom Accent */}
                 <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
-                
+
                 {/* Corner Decorations */}
                 <div className="absolute top-0 right-0 w-16 h-16 overflow-hidden">
                   <div className="absolute top-2 right-2 w-8 h-8 bg-gradient-to-br from-emerald-400/20 to-teal-400/20 rounded-full transform rotate-45 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -321,17 +384,17 @@ const EnhancedProjects = () => {
           {/* Call to Action */}
           <div className="text-center mt-24">
             <div className="inline-block relative">
-              <Link to={'/allProjects'}>
-              <button className="group relative inline-flex items-center gap-4 bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 hover:from-emerald-700 hover:via-teal-700 hover:to-cyan-700 text-white px-12 py-6 text-xl font-bold rounded-3xl shadow-2xl hover:shadow-emerald-500/30 transition-all duration-500 transform hover:scale-110 overflow-hidden">
-                <FaRocket className="group-hover:animate-bounce text-2xl" />
-                <span className="relative z-10">Explore More Projects</span>
-                <FaHeart className="group-hover:animate-pulse text-2xl" />
-                
-                {/* Animated background */}
-                <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-white/10 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
-              </button>
+              <Link to={"/allProjects"}>
+                <button className="group relative inline-flex items-center gap-4 bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 hover:from-emerald-700 hover:via-teal-700 hover:to-cyan-700 text-white px-12 py-6 text-xl font-bold rounded-3xl shadow-2xl hover:shadow-emerald-500/30 transition-all duration-500 transform hover:scale-110 overflow-hidden">
+                  <FaRocket className="group-hover:animate-bounce text-2xl" />
+                  <span className="relative z-10">Explore More Projects</span>
+                  <FaHeart className="group-hover:animate-pulse text-2xl" />
+
+                  {/* Animated background */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-white/10 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+                </button>
               </Link>
-              
+
               {/* Decorative elements around button */}
               <div className="absolute -top-4 -left-4 w-8 h-8 border-2 border-emerald-400 rounded-full animate-spin"></div>
               <div className="absolute -bottom-4 -right-4 w-6 h-6 bg-teal-400 rounded-full animate-bounce"></div>
@@ -343,25 +406,26 @@ const EnhancedProjects = () => {
       {/* Custom CSS for animations */}
       <style jsx>{`
         @keyframes float {
-          0%, 100% {
+          0%,
+          100% {
             transform: translateY(0px) rotate(0deg);
           }
           50% {
             transform: translateY(-20px) rotate(180deg);
           }
         }
-        
+
         .animate-float {
           animation: float 6s ease-in-out infinite;
         }
-        
+
         .line-clamp-2 {
           display: -webkit-box;
           -webkit-line-clamp: 2;
           -webkit-box-orient: vertical;
           overflow: hidden;
         }
-        
+
         .line-clamp-3 {
           display: -webkit-box;
           -webkit-line-clamp: 3;
