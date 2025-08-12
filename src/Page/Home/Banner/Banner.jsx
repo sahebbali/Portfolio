@@ -31,7 +31,7 @@ const Banner = () => {
   };
 
   return (
-    <div className="relative w-full py-32 lg:py-52 flex flex-col md:flex-row items-center justify-between px-6 md:px-16 bg-gradient-to-r  overflow-hidden">
+    <div className="relative w-full py-32 lg:py-45 flex flex-col md:flex-row items-center justify-between px-6 md:px-16 bg-gradient-to-r  overflow-hidden">
       {/* Background Decorative Circles */}
       <motion.div
         animate={{ x: [-10, 10, -10], y: [-10, 20, -10] }}
