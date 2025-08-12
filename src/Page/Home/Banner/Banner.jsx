@@ -8,7 +8,7 @@ const titles = [
   "Frontend Web Developer",
   "MERN Stack Web Developer",
   "Next.js Developer",
-  "Flutter Developer"
+  "Flutter Developer",
 ];
 
 const Banner = () => {
@@ -93,10 +93,11 @@ const Banner = () => {
           <br />
           Your Next-Level Developer!
         </h1>
-        <p className="text-gray-700 text-lg max-w-lg">
-          I am a passionate Frontend Developer, MERN Stack Developer, and a
-          professional Web Developer. I love to build modern, interactive, and
-          high-performance web applications.
+        <p className="text-gray-700 text-lg max-w-lg justify-between md:justify-between mx-auto md:mx-0">
+          I’m a versatile MERN Stack and Flutter Developer with 2 years of
+          experience crafting modern, interactive, and high-performance
+          applications. I specialize in building seamless web and mobile
+          experiences that combine clean design with powerful functionality
         </p>
         <div className="flex flex-wrap gap-4 justify-center md:justify-start pt-2">
           <motion.button

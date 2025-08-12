@@ -43,19 +43,19 @@ const AboutMe = () => {
               Saheb Bali
             </h2>
             <h3 className="text-xl md:text-2xl font-medium text-gray-700 mb-5 font-roboto">
-              Junior Frontend & MERN Stack Developer
+              Junior MERN Stack Developer & Flutter Developer
             </h3>
 
             <p className="text-gray-600 leading-relaxed mb-5 font-lora text-lg">
-              I thrive on crafting scalable, high-performance, and user-centric
-              web applications. From pixel-perfect frontend designs to robust
-              backend architectures, I turn ideas into seamless digital
-              experiences.
+              I’m driven by the challenge of crafting scalable,
+              high-performance, and user-focused applications. From
+              pixel-perfect frontends to robust backend architectures, I
+              transform ideas into seamless digital experiences.
             </p>
             <p className="text-gray-600 leading-relaxed mb-6 font-lora text-lg">
-              💡 Passionate about clean and efficient code. My goal? To bridge
-              innovation with functionality—creating web solutions that are both
-              intuitive and powerful.
+              💡 Passionate about writing clean, efficient code, my mission is
+              to bridge innovation and functionality—delivering solutions that
+              are not only powerful but also intuitive and delightful to use.
             </p>
 
             {/* Contact Section */}
