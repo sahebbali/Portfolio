@@ -41,6 +41,20 @@ const skills = {
       description: "Component-based architecture",
       color: "from-blue-400 to-blue-500"
     },
+    { 
+      name: "Next.js", 
+      icon: <div className="text-white text-5xl bg-black rounded-full p-2">⚡</div>, 
+      percentage: 78,
+      description: "React framework for SSR & SSG",
+      color: "from-gray-800 to-black"
+    },
+    { 
+      name: "Flutter", 
+      icon: <div className="text-blue-400 text-5xl">💙</div>, 
+      percentage: 72,
+      description: "Cross-platform UI toolkit",
+      color: "from-blue-400 to-blue-500"
+    },
   ],
   Backend: [
     { 
@@ -51,11 +65,32 @@ const skills = {
       color: "from-green-600 to-green-700"
     },
     { 
+      name: "Express.js", 
+      icon: <div className="text-gray-800 text-5xl font-bold">EXP</div>, 
+      percentage: 75,
+      description: "Minimal & flexible Node.js framework",
+      color: "from-gray-700 to-gray-800"
+    },
+    { 
       name: "MongoDB", 
       icon: <FaDatabase />, 
       percentage: 65,
       description: "NoSQL database management",
       color: "from-green-700 to-green-800"
+    },
+    { 
+      name: "PostgreSQL", 
+      icon: <div className="text-blue-700 text-5xl font-bold">PSQL</div>, 
+      percentage: 60,
+      description: "Advanced relational database",
+      color: "from-blue-600 to-blue-800"
+    },
+    { 
+      name: "Prisma", 
+      icon: <div className="text-indigo-500 text-5xl font-bold">PRIS</div>, 
+      percentage: 68,
+      description: "Next-gen ORM for DB access",
+      color: "from-indigo-500 to-indigo-700"
     },
   ],
   Tools: [
@@ -72,6 +107,13 @@ const skills = {
       percentage: 90,
       description: "Code editor & extensions",
       color: "from-purple-600 to-purple-700"
+    },
+    { 
+      name: "Dart", 
+      icon: <div className="text-blue-500 text-5xl">💎</div>, 
+      percentage: 70,
+      description: "Language for Flutter development",
+      color: "from-blue-500 to-blue-600"
     },
   ]
 };
