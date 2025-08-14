@@ -72,26 +72,7 @@ const projectsData = [
     featured: true,
     status: "Live",
   },
-  {
-    title: "Gamer Hub",
-    image:
-      "https://res.cloudinary.com/dqfnprtlc/image/upload/v1754981338/Prject%20Image/gpcleg2fk4s3qjc0u1ab.jpg",
-    technologies: [
-      "React.js",
-      "Sass CSS",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "custom Payment gateway",
-      "JWT Auth",
-    ],
-    liveLink: "https://gamers-hubs.netlify.app",
-    serverLink: "https://github.com/sahebbali/Gamers_Hub_Client.git",
-    livesiteLink: "https://github.com/sahebbali/Gamers_Hub_Server.git",
-    category: "fullstack",
-    featured: true,
-    status: "Live",
-  },
+
 ];
 
 const HeaderSection = ({ name }) => (
