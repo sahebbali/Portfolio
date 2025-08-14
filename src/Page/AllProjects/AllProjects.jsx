@@ -27,6 +27,28 @@ const projectsData = [
     category: "fullstack",
   },
   {
+    title: "Grow More Today",
+    description:
+      "Grow More is one of the largest and longest serving independent private equity partnerships. Since our founding in 2016, we have invested investments across 5 countries. While every company is different, our hands-on approach to helping these businesses flourish has remained a constant.",
+    image:
+      "https://res.cloudinary.com/dqfnprtlc/image/upload/v1755162694/Prject%20Image/y1tpa2qiexafw5isk4ev.jpg",
+    technologies: [
+      "React.js",
+      "Sass CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "custom Payment gateway",
+      "JWT Auth",
+    ],
+    liveLink: "https://grow-more-today.netlify.app/",
+    serverLink: "https://github.com/sahebbali/Grow_More_Today_Client.git",
+    livesiteLink: "https://github.com/sahebbali/Grow_More_Today_Server.git",
+    category: "fullstack",
+    featured: true,
+    status: "Live",
+  },
+  {
     title: "Self Life Care",
     description:
       "At Self Life Care, we envision a world where everyone has the opportunity to turn their ideas into reality, regardless of their financial background.",
@@ -92,28 +114,7 @@ const projectsData = [
     featured: true,
     status: "Live",
   },
-  {
-    title: "Grow More Today",
-    description:
-      "Grow More is one of the largest and longest serving independent private equity partnerships. Since our founding in 2016, we have invested investments across 5 countries. While every company is different, our hands-on approach to helping these businesses flourish has remained a constant.",
-    image:
-      "https://res.cloudinary.com/dqfnprtlc/image/upload/v1755162694/Prject%20Image/y1tpa2qiexafw5isk4ev.jpg",
-    technologies: [
-      "React.js",
-      "Sass CSS",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "custom Payment gateway",
-      "JWT Auth",
-    ],
-    liveLink: "https://grow-more-today.netlify.app/",
-    serverLink: "https://github.com/sahebbali/Grow_More_Today_Client.git",
-    livesiteLink: "https://github.com/sahebbali/Grow_More_Today_Server.git",
-    category: "fullstack",
-    featured: true,
-    status: "Live",
-  },
+
   {
     title: "ABHIFX024",
     description:

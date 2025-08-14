@@ -23,7 +23,7 @@ const educationData = [
 
 const Education = () => {
   return (
-    <section className="mt-40">
+    <section className="mt-20">
       <div className="text-center mb-16">
         <HeaderSection name={"EDUCATION"}></HeaderSection>
       </div>
